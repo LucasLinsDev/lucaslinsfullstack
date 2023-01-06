@@ -1,0 +1,39 @@
+.btn-primary {
+  max-width: 208px;
+  height: 50px;
+  background: #22c55e;
+  font-size: 18px;
+  color: white;
+  padding: 0px 24px;
+  border-radius: 6px;
+  border: 0px;
+  cursor:pointer;
+  transition-duration: 0.5s;
+  &:hover{
+    opacity:0.6;
+  }
+  @media screen and (max-width: 996px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.btn-gray {
+  max-width: 126px;
+  height: 50px;
+  border: #d5dae1;
+  background: transparent;
+  font-size: 18px;
+  color: #333f51;
+  padding: 0px 24px;
+  border-radius: 6px;
+  border: 1px solid #d5dae1;
+  @media screen and (max-width: 996px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.btn-linkedin{
+  background:blue;
+}

@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "partials/variables";
+@import "partials/layout";
+@import "partials/font";
+@import "partials/buttons";
+
+@import "partials/components";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/swiper";
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+
+  font-family: "Poppins", sans-serif;
+}
+.disable{
+  cursor:no-drop !important;
+}
+// Para deixar imagens e SVGs fluidos
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.border {
+  border: 1px solid red;
+}

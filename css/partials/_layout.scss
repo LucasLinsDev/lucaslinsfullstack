@@ -1,0 +1,275 @@
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.align-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.movie {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 24px;
+  margin: 0 auto;
+  position: relative;
+
+  img{
+    position: relative;
+    top: -174px;
+  }
+
+  iframe {
+    top: -174px;
+    position: relative;
+    width: 100%;
+    height: 760px;
+  }
+  img {
+    border-radius: 8px;
+    top: -174px;
+    position: relative;
+    width: 100%;
+
+  }
+
+  @media screen and (max-width: 996px) {
+    top: -50px;
+    img {
+      border-radius: 8px;
+      top: 0px;
+      position: relative;
+      width: 100%;
+  
+    }
+    iframe {
+      top: 0px;
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+
+.posts_header {
+  span {
+    /* Primary/100 */
+    /* Primary/500 */
+
+    color: #22c55e;
+    background: #dcfce7;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+    border-radius: 36px;
+    padding: 8px 12px;
+  }
+  h1 {
+    margin-top: 16px;
+    font-size: 48px;
+    color: #2a3342;
+    font-weight: bold;
+  }
+  p {
+    /* text-xl/Medium */
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 456px;
+    /* or 150% */
+
+    /* Gray/500 */
+
+    color: #556987;
+  }
+}
+.posts_categories {
+  padding: 46px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  div:first-child {
+    color: #22c55e;
+    background: #bbf7d0;
+  }
+  div {
+    flex: 1 1 180px;
+    max-width: max-content;
+    padding: 8px 12px;
+    font-weight: bold;
+    background: #bbf7d0;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+    border-radius: 6px;
+    color: #8896ab;
+    background: transparent;
+  }
+}
+
+.posts_container {
+  position: relative;
+  top: -100px;
+  max-width: 1440px;
+  width: 100%;
+  padding: 96px 24px;
+  margin: 0 auto;
+}
+.posts_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  row-gap: 48px;
+  @media screen and (max-width: 996px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.post_grid_item {
+  overflow: hidden;
+  position: relative;
+  h2 {
+    font-size: 36px;
+    color: #2a3342;
+  }
+  p {
+    font-size: 18px;
+    color: #22c55e;
+  }
+  img {
+    width: 100%;
+    transition-duration: 0.5s;
+    &:hover {
+      scale: 1.2;
+      cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 996px) {
+    h2 {
+      font-size: 16px;
+      color: #2a3342;
+    }
+    p {
+      font-size: 14px;
+      color: #22c55e;
+    }
+  }
+}
+.post_grid_item_image {
+  overflow: hidden;
+}
+
+.social_link {
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 96px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    padding: 36px 24px;
+  }
+}
+
+.footer_menu {
+  display: flex;
+  gap: 46px;
+  a {
+    font-size: 20px;
+    color: #556987;
+  }
+  @media screen and (max-width: 996px) {
+    gap: 16px;
+    display: inline-block;
+    a {
+      padding-right: 26px;
+    }
+  }
+}
+.footer_left_copy {
+  color: #8896ab;
+  font-size: 16px;
+}
+
+.footer_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 996px) {
+    flex-direction: column;
+    gap: 36px;
+  }
+}
+
+.social_link {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  cursor: pointer;
+}
+
+footer {
+  position: a;
+
+  background-image: url("../img/bg.png");
+}
+
+.icon-react,
+.icon-wordpress,
+.icon-nodejs {
+  position: absolute;
+  z-index: 200;
+
+  img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+}
+.icon-react {
+  animation: logo-animation 4s ease-in;
+  left: 200px;
+  top: 200px;
+  opacity: 1;
+}
+.icon-wordpress {
+  left: 400px;
+  top: 300px;
+  animation: logo-animation 2s ease-in;
+}
+.icon-nodejs {
+  right: 200px;
+  top: 200px;
+  animation: logo-animation 5s ease-in;
+}
+
+@keyframes logo-animation {
+  0% {
+    left: 200px;
+    top: -200px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 200px;
+  }
+}
+
+
